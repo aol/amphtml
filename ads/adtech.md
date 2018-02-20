@@ -30,10 +30,11 @@ limitations under the License.
 For semantics of configuration, please see ad network documentation.
 
 ### Required Parameters:
-* `data-atwMN` - magic number for the ad spot
-* `data-atwDiv` - div name of the ad spot; can be class or id
+
+* `data-atwDiv` - div name of the ad spot; can be class or id - made optional so you can pass atwPlId for international instead
 
 ### Optional parameters:
+* `data-atwMN` - magic number for the ad spot
 * `data-atwPlId` - placement ID (instead of Magic Number)
 * `data-atwOthAT` - generic var to set key/value pairs to send with the ad call; accepts mulitple values in a semi-colon delimited list
 * `data-atwCo` - override default country code
@@ -43,6 +44,7 @@ For semantics of configuration, please see ad network documentation.
 * `data-atwHeight`- ad height (use with atwWidth only if the ad is not 300x250)
 * `data-atwSizes` - this overrides atwWidth/atwHeight; use this to create a comma-separated list of possible ad sizes
 * 'data-atwPolar' - set to "1" to enable Polar.me ad in the ad spot
+* 'data-atwStyle' - set to name of style sheet o ues - for autoblog at first.
 
 ### Direct URL Call:
 * `src` - Value must start with `https:` and contain `/addyn/`.  This should only be used in cases where a direct ad call is being used rather than a magic number (MN).
